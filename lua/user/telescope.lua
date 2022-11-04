@@ -3,6 +3,7 @@ if not status_ok then
   return
 end
 
+telescope.load_extension('fzf')
 telescope.load_extension('gh')
 
 local actions = require "telescope.actions"
@@ -23,5 +24,12 @@ telescope.setup {
         ["<C-k>"] = actions.move_selection_previous,
       },
     },
+    extensions = {
+      fzf = {
+        fuzzy = true,
+        override_generic_sorter = true,
+        override_file_sorter = true,
+      }
+    }
   },
 }
