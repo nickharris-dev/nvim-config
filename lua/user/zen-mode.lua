@@ -5,6 +5,6 @@ end
 
 zen.setup({
 	window = {
-		width = 0.9,
+		width = 0.99,
 	},
 })
