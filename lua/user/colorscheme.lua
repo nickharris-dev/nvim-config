@@ -7,7 +7,6 @@ end
 
 dracula.setup({
 	transparent_bg = true,
-	italic_comment = true,
 })
 
 local _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
