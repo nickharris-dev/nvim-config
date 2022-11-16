@@ -77,6 +77,8 @@ return packer.startup(function(use)
 	use({ "L3MON4D3/LuaSnip", commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" }) --snippet engine
 	use({ "andys8/vscode-jest-snippets" })
 	use({ "rafamadriz/friendly-snippets", commit = "2be79d8a9b03d4175ba6b3d14b082680de1b31b1" }) -- a bunch of snippets to use
+	use({ "infeng/vscode-react-typescript" })
+	use({ "softchris/ts-snippets" })
 
 	-- LSP
 	-- use { "williamboman/nvim-lsp-installer", commit = "e9f13d7acaa60aff91c58b923002228668c8c9e6" } -- simple to use language server installer
