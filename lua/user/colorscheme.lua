@@ -6,6 +6,7 @@ if not status_ok then
 end
 
 dracula.setup({
+	show_end_of_buffer = false,
 	transparent_bg = true,
 })
 
