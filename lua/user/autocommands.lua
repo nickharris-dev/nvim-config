@@ -83,3 +83,8 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 		vim.cmd("lua vim.lsp.buf.format{ async = false }")
 	end,
 })
+
+vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
+	command = "if mode() != 'c' | checktime | endif",
+	pattern = { "*" },
+})
