@@ -12,11 +12,11 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup({
 	debug = false,
 	sources = {
-		formatting.eslint,
 		formatting.prettierd.with({
 			extra_filetypes = { "toml" },
 		}),
-		diagnostics.eslint,
+		diagnostics.eslint_d,
+		formatting.eslint_d,
 		formatting.stylua,
 	},
 })
