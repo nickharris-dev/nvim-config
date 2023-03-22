@@ -30,7 +30,6 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
-keymap("n", "<S-Tab", ":bprevious<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Clear highlights
@@ -53,6 +52,9 @@ keymap("v", ">", ">gv", opts)
 
 -- NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<leader><S-e>", ":NvimTreeFocus<CR>", opts)
+keymap("n", "<leader>mn", require("nvim-tree.api").marks.navigate.next, opts)
+keymap("n", "<leader>mp", require("nvim-tree.api").marks.navigate.prev, opts)
 
 -- Telescope
 keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
@@ -86,3 +88,9 @@ keymap("n", "<leader>s", ":SymbolsOutline<CR>", opts)
 
 -- ZenMode
 keymap("n", "<leader>z", ":ZenMode<CR>")
+
+-- Go to definition in a new split
+keymap("n", "gv", ":vsplit<CR>gd", opts)
+keymap("n", "gV", ":vsplit<CR>gD", opts)
+keymap("n", "gx", ":split<CR>gd", opts)
+keymap("n", "gX", ":split<CR>gD", opts)

@@ -15,8 +15,8 @@ null_ls.setup({
 		formatting.prettierd.with({
 			extra_filetypes = { "toml" },
 		}),
-		diagnostics.eslint,
-		formatting.eslint,
+		diagnostics.eslint_d,
+		formatting.eslint_d,
 		formatting.stylua,
 	},
 })
